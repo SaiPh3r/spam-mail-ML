@@ -1,0 +1,13 @@
+prefix=/Users/saianand/Documents/spam-mail-ML/env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=1
+
+Name: libXML
+Version: 2.13.8
+Description: libXML library version2.
+Requires.private:  icu-i18n
+Libs: -L${libdir} -lxml2 
+Libs.private:  -L/Users/saianand/Documents/spam-mail-ML/env/lib -lz -L/Users/saianand/Documents/spam-mail-ML/env/lib -llzma  -L/Users/saianand/Documents/spam-mail-ML/env/lib -liconv    
+Cflags: -I${includedir}/libxml2 -I/Users/saianand/Documents/spam-mail-ML/env/include 
